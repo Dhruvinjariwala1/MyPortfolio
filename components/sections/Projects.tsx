@@ -50,7 +50,7 @@ const projects: Project[] = [
     title: "Human Resource Management System",
     description:
       "Complete HRMS with attendance import, payroll PDF generation, employee notifications, and role-based access control.",
-    tech: ["ASP.NET MVC Core","Entity FrameWork", "SSMS", "Bootstrap", "Ajax", "Jquery"],
+    tech: ["ASP.NET MVC Core","Entity FrameWork", "SSMS", "Bootstrap", "Ajax", "Jquery", "Bootstrap 4"],
     image: "/images/project-hrms.png",
     //github: "#",
   },
@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: "Lariox Technologies - Website",
     description:
       "Lariox Technologies is an industrial automation and technology solutions company based in Surat, Gujarat, India. Founded with a vision to drive innovation and engineering excellence, Lariox helps industries optimize processes, improve operational efficiency, and harness the power of data through smart automation and software solutions",
-    tech: ["React", "Vite"],
+    tech: ["React", "Vite", ".Net Core"],
     image: "/images/project-website.png",
     //github: "#",
   },

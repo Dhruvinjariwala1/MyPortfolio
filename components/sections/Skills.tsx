@@ -10,6 +10,7 @@ import {
   FaDatabase,
   FaAndroid,
   FaPython,
+  FaPhp
 } from 'react-icons/fa'
 import {
   SiDotnet,
@@ -24,7 +25,7 @@ import {
 
 const skills = [
   { name: 'ASP.NET Core MVC', icon: <SiDotnet />, level: 100 },
-  { name: 'C# & OOP', icon: <FaCodeIcon />, level: 30 },
+  { name: 'Php', icon: <FaPhp />, level: 35 },
   { name: 'Next.js / React', icon: <FaReact />, level: 40 },
   { name: 'JavaScript', icon: <SiJavascript />, level: 40 },
   //{ name: 'TypeScript', icon: <SiTypescript />, level: 75 },
