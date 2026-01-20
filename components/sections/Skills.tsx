@@ -20,14 +20,15 @@ import {
   SiJavascript,
  // SiTypescript,
   //SiKotlin,
-  SiJquery
+  SiJquery,
+  SiFigma
 } from 'react-icons/si'
 
 const skills = [
   { name: 'ASP.NET Core MVC', icon: <SiDotnet />, level: 100 },
   { name: 'Php', icon: <FaPhp />, level: 35 },
   { name: 'Next.js / React', icon: <FaReact />, level: 40 },
-  { name: 'JavaScript', icon: <SiJavascript />, level: 40 },
+  { name: 'JavaScript', icon: <SiJavascript />, level: 30 },
   //{ name: 'TypeScript', icon: <SiTypescript />, level: 75 },
   //{ name: 'Node.js', icon: <FaNodeJs />, level: 70 },
   //{ name: 'MongoDB', icon: <SiMongodb />, level: 70 },
@@ -40,6 +41,7 @@ const skills = [
   { name: 'Android', icon: <FaAndroid />, level: 60 },
   { name: 'Python', icon: <FaPython />, level: 85 },
   { name: 'Ajax', icon: <SiJquery />, level: 35 },
+  { name: 'Figma', icon: <SiFigma />, level: 20 },
 ]
 
 export default function Skills() {

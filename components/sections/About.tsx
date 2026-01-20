@@ -25,8 +25,8 @@ export default function About() {
 
           <p className="text-gray-400 leading-relaxed text-lg">
             I'm a passionate <span className="text-white font-semibold">Asp.net Mvc Developer </span>
-            with strong expertise in <span className="text-cyan-400">ASP.NET Core MVC</span>, 
-            modern JavaScript frameworks, and database-driven applications.
+            with strong expertise in <span className="text-cyan-400">ASP.NET Core MVC </span>  
+             and database-driven applications.
           </p>
 
           <p className="text-gray-400 leading-relaxed text-lg">

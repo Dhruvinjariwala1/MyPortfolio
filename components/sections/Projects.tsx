@@ -62,6 +62,14 @@ const projects: Project[] = [
     image: "/images/project-website.png",
     //github: "#",
   },
+  {
+    title: "Water Treatment Plant Mobile Application",
+    description:
+      "The Water Treatment Plant (WTP) Mobile Application is a smart monitoring system designed to digitally supervise multiple water treatment plants and pumping stations.The application provides real-time operational data, water quality analysis, pump status monitoring, and historical reports through an easy-to-use mobile interface.",
+    tech: ["Flutter", ".Net Core"],
+    image: "/images/project-wtp.png",
+    //github: "#",
+  },
   // {
   //   title: "3D Developer Portfolio",
   //   description:
