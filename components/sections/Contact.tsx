@@ -33,7 +33,7 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault()
 
   if (!form.name || !form.email || !form.message) {
@@ -50,21 +50,40 @@ export default function Contact() {
 
   setLoading(true)
 
-  setTimeout(() => {
-    setLoading(false)
-
-    Swal.fire({
-      icon: 'success',
-      title: 'Message Ready 🚀',
-      text: 'Your email client will open now',
-      confirmButtonColor: '#22d3ee',
-      background: '#020617',
-      color: '#ffffff',
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
     })
 
-    window.location.href = `mailto:yourmail@gmail.com?subject=Portfolio Contact from ${form.name}&body=${form.message}%0A%0AFrom: ${form.email}`
-  }, 1000)
+    const data = await res.json()
+
+    if (data.success) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent 🚀',
+        text: 'Your message has been sent successfully',
+        confirmButtonColor: '#22d3ee',
+        background: '#020617',
+        color: '#ffffff',
+      })
+
+      setForm({ name: '', email: '', message: '' })
+    } else {
+      throw new Error()
+    }
+  } catch {
+    Swal.fire({
+      icon: 'error',
+      title: 'Failed 😢',
+      text: 'Email could not be sent',
+    })
+  } finally {
+    setLoading(false)
+  }
 }
+
 
 
   return (
