@@ -5,8 +5,14 @@ export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json()
 
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      throw new Error('Missing env vars')
+    }
+
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -15,20 +21,17 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: 'dhruvinjariwala422002@gmail.com',
+      to: process.env.EMAIL_USER,
+      replyTo: email,
       subject: `New Contact Message from ${name}`,
-      html: `
-        <h3>New Portfolio Contact</h3>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Message:</b> ${message}</p>
-      `,
+      html: `<p>${message}</p>`,
     })
 
     return NextResponse.json({ success: true })
-  } catch (error) {
+  } catch (err: any) {
+    console.error('MAIL ERROR:', err)
     return NextResponse.json(
-      { success: false, error: 'Email failed' },
+      { success: false },
       { status: 500 }
     )
   }
