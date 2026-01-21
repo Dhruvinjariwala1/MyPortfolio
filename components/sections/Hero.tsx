@@ -57,7 +57,7 @@ export default function Hero() {
           variants={item}
           className="text-gray-400 max-w-xl text-lg"
         >
-          ASP.NET & Full Stack Developer crafting modern, scalable,
+          ASP.NET MVC Developer modern, scalable,
           and visually engaging web experiences.
         </motion.p>
 
