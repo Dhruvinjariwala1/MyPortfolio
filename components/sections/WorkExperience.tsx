@@ -40,7 +40,7 @@ const experiences: Experience[] = [
     role: 'Software Developer',
     company: 'Lariox Technologies',
     location: 'Surat, Gujarat',
-    duration: 'Jan 2025 - December 2025',
+    duration: 'Jan 2025 - December 2025 (Present)',
     description:
       'Working as software developer intern at lariox technologies and gaining deeper knowledge about React and Vite by building real-world applications.',
     skills: 'React, Vite, .Net Mvc, EntityFrameWork',
