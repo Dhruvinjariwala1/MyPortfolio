@@ -32,9 +32,17 @@ const item: Variants = {
 export default function Hero() {
   return (
     <section
-      id="home"
-      className="relative h-screen w-full flex items-center justify-between px-10 md:px-20 pt-24 overflow-hidden"
-    >
+  id="home"
+  className="
+    relative h-screen w-full
+    flex items-center justify-between
+    px-10 md:px-20 pt-24
+    overflow-hidden
+    bg-slate-950
+    bg-gradient-to-r from-slate-950 via-black to-slate-950
+  "
+>
+
       {/* LEFT CONTENT */}
       <motion.div
         variants={container}
