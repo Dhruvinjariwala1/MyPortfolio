@@ -9,7 +9,7 @@ type TechSphereProps = {
 export default function TechSphere({ scale = 1 }: TechSphereProps) {
   return (
     <group scale={scale}>
-      <Sphere args={[1.5, 32, 32]}>
+      <Sphere args={[2.4, 50, 50]}>
         <meshStandardMaterial
           color="#00ffff"
           wireframe
