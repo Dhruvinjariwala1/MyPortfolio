@@ -65,7 +65,7 @@ export default function WorkExperience() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold flex items-center gap-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
             Experience <span className="text-cyan-400">💼</span>
           </h2>
         </motion.div>

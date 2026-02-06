@@ -49,10 +49,10 @@ export default function Achievements() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold flex items-center gap-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
             Achievements / <span className="text-cyan-400">Certifications</span> 🏆
           </h2>
-          <p className="text-gray-400 mt-3">
+          <p className="text-gray-400 mt-3 text-center">
             Achievements and some best certifications which I have done.
           </p>
         </motion.div>
