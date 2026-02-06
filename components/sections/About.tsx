@@ -71,7 +71,7 @@ export default function About() {
           <AboutCard
             icon={<FaLaptopCode />}
             title="Frontend Skills"
-            description="Next.js, React, Tailwind CSS, Three.js, Framer Motion & responsive UI."
+            description="Next.js, React & responsive UI."
           />
 
           <AboutCard

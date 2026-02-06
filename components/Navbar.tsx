@@ -17,9 +17,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="mx-auto max-w-8xl px-6 md:px-16 py-4 flex items-center justify-between
-                      bg-black/40 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 h-[64px]">
+      <nav
+  className="
+    h-full
+    mx-auto max-w-8xl
+    px-4 sm:px-6 md:px-16
+    flex items-center justify-between
+    bg-black/40 backdrop-blur-md
+    border-b border-white/10 "
+>
 
         {/* LOGO */}
         <a
