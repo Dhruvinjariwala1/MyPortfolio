@@ -73,7 +73,7 @@ const projects: Project[] = [
   {
     title: "My Portfolio Website",
     description:
-      "I’m a passionate Asp.net MVC Developer with a strong foundation in ASP.NET Core MVC and UI/UX design. I enjoy building scalable, secure, and user-centric web applications that solve real-world problems and deliver smooth digital experiences.I have a keen eye for clean UI, responsiveness, and performance, and I love blending technical logic with thoughtful design. Whether it’s implementing complex business logic, integrating APIs, or refining user experience, I focus on writing maintainable, efficient, and scalable code.",
+      "I’m a passionate Asp.net MVC Developer with a strong foundation in ASP.NET Core MVC and UI/UX design. I enjoy building scalable, secure, and user-centric web applications that solve real-world problems and deliver smooth digital experiences.I have a keen eye for clean UI, responsiveness, and performance, and I love blending technical logic with thoughtful design.",
     tech: ["React","Next.js","Framer-Motion"],
     image: "/images/project-myportfolio.png",
     //github: "#",
