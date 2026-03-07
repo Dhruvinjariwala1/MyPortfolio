@@ -13,9 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dhruvin Jariwala | Portfolio",
+  title: "Dhruvin Jariwala | ASP.NET Core & React Developer Portfolio",
   description: "3D Developer Portfolio of Dhruvin Jariwala",
-}
+  verification: {
+    google: "H9JPp1Gj4LXelxPJjZUsBUzx03lFBhC5QNaQZNotxSY",
+  },
+  keywords: [
+    "Dhruvin Jariwala",
+    "ASP.NET Core Developer",
+    "Reactjs Developer",
+    "Full Stack Developer India"
+  ],
+  authors: [{ name: "Dhruvin Jariwala" }],
+  metadataBase: new URL("https://dhruvinjariwala.vercel.app"),
+
+   openGraph: {
+    title: "Dhruvin Jariwala Developer Portfolio",
+    description:
+      "Portfolio of Dhruvin Jariwala - ASP.NET Core MVC and React Developer.",
+    url: "https://dhruvinjariwala.vercel.app",
+    siteName: "Dhruvin Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 
 export default function RootLayout({
