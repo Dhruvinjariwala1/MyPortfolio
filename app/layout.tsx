@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
     {
-      url: "/images/icon.png",
+      url: "https://dhruvinjariwala.vercel.app/images/icon.png",
       width: 1200,
       height: 630,
       alt: "Dhruvin Jariwala Portfolio",
