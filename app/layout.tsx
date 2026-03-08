@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     "Dhruvin Jariwala",
     "ASP.NET Core Developer",
     "Reactjs Developer",
-    "Full Stack Developer India"
+    "Full Stack Developer India",
   ],
   authors: [{ name: "Dhruvin Jariwala" }],
   metadataBase: new URL("https://dhruvinjariwala.vercel.app"),
 
-   openGraph: {
+  openGraph: {
     title: "Dhruvin Jariwala Developer Portfolio",
     description:
       "Portfolio of Dhruvin Jariwala - ASP.NET Core MVC and React Developer.",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     images: [
-    {
-      url: "https://dhruvinjariwala.vercel.app/images/icon.png",
-      width: 1200,
-      height: 630,
-      alt: "Dhruvin Jariwala Portfolio",
-    },
-  ],
+      {
+        url: "https://dhruvinjariwala.vercel.app/icon.png",
+        width: 1200,
+        height: 630,
+        alt: "Dhruvin Jariwala Portfolio",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -50,11 +50,10 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -65,6 +64,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
-
