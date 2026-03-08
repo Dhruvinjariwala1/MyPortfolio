@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     siteName: "Dhruvin Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+    {
+      url: "/images/icon.png",
+      width: 1200,
+      height: 630,
+      alt: "Dhruvin Jariwala Portfolio",
+    },
+  ],
   },
   robots: {
     index: true,
