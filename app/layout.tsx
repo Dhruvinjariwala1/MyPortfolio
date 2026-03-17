@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Dhruvin Jariwala | ASP.NET Core & React Developer Portfolio",
   description: "3D Developer Portfolio of Dhruvin Jariwala",
   verification: {
-    google: "7pgBNgVePf3jY_sI6fr51AHCrDOJ3j6SndMAwB9GQQM",
+    google: "H9JPp1Gj4LXelxPJjZUsBUzx03lFBhC5QNaQZNotxSY",
   },
   keywords: [
     "Dhruvin Jariwala",
@@ -25,19 +25,19 @@ export const metadata: Metadata = {
     "Full Stack Developer India",
   ],
   authors: [{ name: "Dhruvin Jariwala" }],
-  metadataBase: new URL("https://www.dhruvinjariwala.com"),
+  metadataBase: new URL("https://dhruvinjariwala.vercel.app"),
 
   openGraph: {
     title: "Dhruvin Jariwala Developer Portfolio",
     description:
       "Portfolio of Dhruvin Jariwala - ASP.NET Core MVC and React Developer.",
-    url: "https://www.dhruvinjariwala.com",
+    url: "https://dhruvinjariwala.vercel.app",
     siteName: "Dhruvin Portfolio",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.dhruvinjariwala.com/icon.png",
+        url: "https://dhruvinjariwala.vercel.app/icon.png",
         width: 1200,
         height: 630,
         alt: "Dhruvin Jariwala Portfolio",
